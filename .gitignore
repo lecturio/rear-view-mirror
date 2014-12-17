@@ -1,0 +1,6 @@
+vendor
+*.lock
+config.yml
+*.swp
+.idea
+*.iml

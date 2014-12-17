@@ -1,0 +1,4 @@
+#default config
+aws:
+  access.key: AWS_KEY
+  secret.key: AWS_SECRET
