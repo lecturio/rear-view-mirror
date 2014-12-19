@@ -23,6 +23,10 @@ class RecursiveReader
 
         $nodes = array();
         foreach ($iterator as $name => $node) {
+            if (is_dir($name)) {
+                continue;
+            }
+
             if (isset($this->config['filesystem']['copy.paths'])) {
                 foreach ($this->config['filesystem']['copy.paths'] as $path) {
                     if (preg_match("/$path/", $name)) {
