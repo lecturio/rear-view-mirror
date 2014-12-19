@@ -4,6 +4,12 @@ aws:
   secret.key: AWS_SECRET
   bucket: BUCKET_NAME
 
+ssh:
+  port:
+  server:
+  key:
+  backup.location:
+
 filesystem:
   general.node: /path-to-dir-for-copy
   copy.paths: [RecursiveReader.php]
