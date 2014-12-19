@@ -38,7 +38,6 @@ class RecursiveReaderTest extends \PHPUnit_Framework_TestCase
             'filesystem' => array('general.node' => __DIR__, 'copy.paths' => array('system', 'Recursive'))
         ));
 
-        var_dump($recursiveReader->read());
         $this->assertEquals(1, count($recursiveReader->read()));
     }
 
